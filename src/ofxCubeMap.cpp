@@ -28,12 +28,12 @@ void ofxCubeMap::loadFromOfImages( ofImage pos_x, ofImage pos_y, ofImage pos_z, 
 	data_pz = new unsigned char [img_size * img_size * 3];
 	data_nz = new unsigned char [img_size * img_size * 3];
 	
-	data_px = pos_x.getPixels();
-	data_nx = neg_x.getPixels();
-	data_py = pos_y.getPixels();
-	data_ny = neg_y.getPixels();
-	data_pz = pos_z.getPixels();
-	data_nz = neg_z.getPixels();
+	data_px = pos_x.getPixels().getData();
+	data_nx = neg_x.getPixels().getData();
+	data_py = pos_y.getPixels().getData();
+	data_ny = neg_y.getPixels().getData();
+	data_pz = pos_z.getPixels().getData();
+	data_nz = neg_z.getPixels().getData();
 	
 	glTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X_ARB, 0, GL_RGB, img_size, img_size, 0, GL_RGB, GL_UNSIGNED_BYTE, data_px); // postive x
 	glTexImage2D(GL_TEXTURE_CUBE_MAP_NEGATIVE_X_ARB, 0, GL_RGB, img_size, img_size, 0, GL_RGB, GL_UNSIGNED_BYTE, data_nx); // negative x
