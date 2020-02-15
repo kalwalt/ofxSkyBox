@@ -9,7 +9,6 @@ void testApp::setup(){
 	camera.setPosition(ofVec3f(0, 0, 0));
 
 
-	camera.cacheMatrices(false) ;
 
 	skybox.load();
 }
