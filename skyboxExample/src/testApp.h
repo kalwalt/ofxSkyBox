@@ -19,16 +19,7 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
-
-
-
-       		ofxSkyBox        skybox;
-
-            ofCamera		camera;
-
-            ofVec3f sphereCenter;
-
-
+    ofxSkyBox skybox;
+    ofCamera camera;
+    ofVec3f sphereCenter;
 };
-
-

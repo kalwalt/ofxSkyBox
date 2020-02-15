@@ -1,14 +1,11 @@
 #include "testApp.h"
-//#include <glut.h>
+
 //--------------------------------------------------------------
 void testApp::setup(){
-
 
 	sphereCenter = ofVec3f(0, 0, 0);
 
 	camera.setPosition(ofVec3f(0, 0, 0));
-
-
 
 	skybox.load();
 }
@@ -21,14 +18,11 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 
-
 	camera.begin();
 
     skybox.draw();
 
     camera.lookAt(ofVec3f(mouseY,  0,mouseX), ofVec3f(0, 1, 0));
-
-
 
 	camera.end();
 
