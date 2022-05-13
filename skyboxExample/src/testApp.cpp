@@ -22,7 +22,7 @@ void testApp::draw(){
 
     skybox.draw();
 
-    camera.lookAt(ofVec3f(mouseY,  0,mouseX), ofVec3f(0, 1, 0));
+    //camera.lookAt(ofVec3f(mouseY,  0,mouseX), ofVec3f(0, 1, 0));
 
 	camera.end();
 

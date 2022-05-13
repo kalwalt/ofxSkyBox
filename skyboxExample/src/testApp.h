@@ -20,6 +20,6 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 
     ofxSkyBox skybox;
-    ofCamera camera;
+    ofEasyCam camera;
     ofVec3f sphereCenter;
 };
